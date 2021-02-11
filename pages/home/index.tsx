@@ -8,15 +8,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { withTranslation } from "@Server/i18n";
 import {
     Container,
-    Top,
-    TopText,
-    Middle,
-    MiddleLeft,
-    MiddleLeftButtons,
-    MiddleRight,
-    Apod,
-    ApodButton,
 } from "@Styled/Home";
+import { Navbar } from "@Components/Navbar";
+import { Banner } from "@Components/Banner";
 import { IStore } from "@Redux/IStore";
 import { HomeActions } from "@Actions";
 import { Heading, LocaleButton } from "@Components";
@@ -45,39 +39,8 @@ const Home: NextPage<IHomePage.IProps, IHomePage.InitialProps> = ({
 
     return (
         <Container>
-            <Top>
-                <img src="/images/pankod-logo.png" alt="Pankod Logo" />
-            </Top>
-            <Middle>
-                <MiddleLeft>
-                    <MiddleLeftButtons>
-                        {renderLocaleButtons(i18n.language)}
-                    </MiddleLeftButtons>
-                </MiddleLeft>
-                <MiddleRight>
-                    <TopText>{t("common:Hello")}</TopText>
-                    <Heading text={t("common:World")} />
-                    <Apod>
-                        <ApodButton
-                            onClick={() => {
-                                dispatch(
-                                    HomeActions.GetApod({
-                                        params: { hd: false },
-                                    })
-                                );
-                            }}
-                        >
-                            Discover Space
-                        </ApodButton>
-                        <img
-                            src={home.image.url}
-                            height="300"
-                            width="150"
-                            alt="Discover Space"
-                        />
-                    </Apod>
-                </MiddleRight>
-            </Middle>
+            <Navbar></Navbar>
+            <Banner/>
         </Container>
     );
 };

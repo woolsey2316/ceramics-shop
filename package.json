@@ -19,6 +19,9 @@
     "build-storybook": "build-storybook -s ./public/static  -c .storybook -o .storybookout"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@next/bundle-analyzer": "^9.4.4",
     "autoprefixer": "^9.6.1",
     "bootstrap": "^4.5.2",
@@ -104,7 +107,7 @@
     "ts-jest": "^25.4.0",
     "ts-loader": "^6.2.2",
     "ts-node": "^8.4.1",
-    "typescript": "^3.9.3"
+    "typescript": "^3.8.3"
   },
   "pankod": {
     "projectType": "nextjs2"

@@ -3,13 +3,18 @@ import styled from "styled-components";
 // #endregion Global Imports
 
 export const Container = styled.div`
-    background-color: ${({ theme }) => theme.colors.primary};
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 100%;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
+    color: #313132;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Noto Sans JP,sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
 `;
 
 export const Top = styled.div`
