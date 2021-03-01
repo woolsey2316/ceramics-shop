@@ -5,9 +5,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     color: #313132;
     font-size: 15px;
-    font-style: normal;
     font-weight: 400;
-    font-family: Noto Sans JP,sans-serif;
+    font-family: 'Poppins';
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;

@@ -20,6 +20,8 @@
       "@Components": ["src/Components"],
       "@Definitions/*": ["src/Definitions/*"],
       "@Definitions": ["src/Definitions"],
+      "@Helpers": ["src/Helpers"],
+      "@Helpers/*": ["src/Helpers/*"],
       "@Interfaces": ["src/Interfaces"],
       "@Interfaces/*": ["src/Interfaces/*"],
       "@Pages/*": ["pages/*"],

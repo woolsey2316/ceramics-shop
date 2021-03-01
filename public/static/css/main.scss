@@ -1,1 +1,71 @@
 @import "./bootstrap/index";
+
+.fa-chevron-down:hover {
+  color: rgb(252, 132, 107);
+}
+
+// Noto Sans
+@font-face {
+  font-family: "NotoSansPF";
+  src: url("/fonts/NotoSansPF-Bold.ttf");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NotoSansPF";
+  src: url("/fonts/NotoSansPF-BoldItalic.ttf");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NotoSansPF";
+  src: url("/fonts/NotoSansPF-Italic.ttf");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NotoSansPF";
+  src: url("/fonts/NotoSansPF-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+// Poppins font
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Black.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-BlackItalic.ttf");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}

@@ -11,9 +11,18 @@ import { theme } from "@Definitions/Styled";
 import { appWithTranslation } from "@Server/i18n";
 import { AppWithStore } from "@Interfaces";
 import { makeStore } from "@Redux";
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faChevronDown, faUser, faShoppingBag } from "@fortawesome/free-solid-svg-icons"
 
 import "@Static/css/main.scss";
 // #endregion Local Imports
+
+library.add(
+    // solid icon
+    faChevronDown,
+    faUser,
+    faShoppingBag
+)
 
 class WebApp extends App<AppWithStore> {
     static async getInitialProps({
@@ -26,7 +35,6 @@ class WebApp extends App<AppWithStore> {
 
         return { pageProps };
     }
-
     render() {
         const { Component, pageProps, store } = this.props;
 

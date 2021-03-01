@@ -10,7 +10,7 @@ import {
     Container,
 } from "@Styled/Home";
 import { Navbar } from "@Components/Navbar";
-import { Banner } from "@Components/Banner";
+import { Hero } from "@Components/Hero";
 import { IStore } from "@Redux/IStore";
 import { HomeActions } from "@Actions";
 import { Heading, LocaleButton } from "@Components";
@@ -39,8 +39,9 @@ const Home: NextPage<IHomePage.IProps, IHomePage.InitialProps> = ({
 
     return (
         <Container>
-            <Navbar></Navbar>
-            <Banner/>
+            <Hero>
+                <Navbar></Navbar>   
+            </Hero>
         </Container>
     );
 };
