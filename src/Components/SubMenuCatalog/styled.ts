@@ -6,6 +6,7 @@ import { device } from '../../Definitions/StyledComponents/device'
 import { HoverLink } from '../../Definitions/StyledComponents/components'
 
 export const Container = styled.ul`
+    z-index:50;
     opacity: inherit;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -15,7 +16,7 @@ export const Container = styled.ul`
     @media ${device.laptop} { 
         position: fixed;
         left: 3%;
-        right: 0;
+        width: 94%;
         z-index: 100;
         padding: 20px 30px;
         max-height: 82vh;
@@ -42,7 +43,7 @@ export const Container = styled.ul`
         box-shadow: 0 3px 3px -3px rgb(0 0 0 / 10%);
     }
     
-`;
+`
 
 export const GridContainer = styled.div`
     @media ${device.laptop} { 
@@ -55,7 +56,7 @@ export const GridContainer = styled.div`
         font-family: Poppins;
     }
     
-`;
+`
 
 export const TitleLink = styled(HoverLink)`
     font-weight: 600;

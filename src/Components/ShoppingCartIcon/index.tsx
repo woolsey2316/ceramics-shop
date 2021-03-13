@@ -4,7 +4,7 @@ import React from "react";
 
 // #region Local Imports
 import { Icon } from "./styled";
-import { TopBarItem } from '../../Styled/NavBar';
+import { ShoppingCartWrap } from '../../Styled/NavBar';
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -16,7 +16,7 @@ export const ShoppingCartIcon: React.FunctionComponent<
 > = (props: IShoppingCartIcon.IProps) => {
 
     return (
-        <TopBarItem><Icon className="fa-2x fa fa-shopping-bag"></Icon></TopBarItem>
+        <ShoppingCartWrap><Icon className="fa-2x fa fa-shopping-bag"></Icon></ShoppingCartWrap>
     );
 };
 

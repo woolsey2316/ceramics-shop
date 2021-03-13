@@ -3,7 +3,6 @@ import styled from "styled-components";
 // #endregion Global Imports
 
 export const Container = styled.div`
-    background: url("images/slider_2000x.png") no-repeat fixed center;
     display: flex;
     flex-direction: column;
     flex: 1 1 100%;

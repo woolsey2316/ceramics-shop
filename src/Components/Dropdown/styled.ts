@@ -2,6 +2,8 @@
 import styled from "styled-components";
 // #endregion Global Imports
 
+import { device } from "@Definitions/StyledComponents";
+
 export const Main = styled.div`
   font-family: 'Poppins', sans-serif;
 `;
@@ -9,6 +11,10 @@ export const Main = styled.div`
 export const DropdownContainer = styled.div`
   margin: 0 auto;
   cursor: pointer;
+  display: none;
+  @media ${device.laptop} {
+    display: block;
+  }
 `;
 
 export const DropdownHeader = styled.div`

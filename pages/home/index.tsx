@@ -9,11 +9,12 @@ import { withTranslation } from "@Server/i18n";
 import {
     Container,
 } from "@Styled/Home";
-import { Navbar } from "@Components/Navbar";
-import { Hero } from "@Components/Hero";
 import { IStore } from "@Redux/IStore";
 import { HomeActions } from "@Actions";
 import { Heading, LocaleButton } from "@Components";
+import { Hero } from "@Components/Hero";
+import { HeroSlickSlider } from "@Components/HeroSlickSlider";
+import { Navbar } from "@Components/Navbar";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -40,7 +41,8 @@ const Home: NextPage<IHomePage.IProps, IHomePage.InitialProps> = ({
     return (
         <Container>
             <Hero>
-                <Navbar></Navbar>   
+                <Navbar></Navbar>  
+                <HeroSlickSlider/>
             </Hero>
         </Container>
     );

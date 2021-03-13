@@ -6,29 +6,37 @@ import { device } from '../../Definitions/StyledComponents'
 import { HoverLink } from '../../Definitions/StyledComponents/components'
 
 export const Container = styled.div`
-    position: absolute;
+    z-index:50; 
     visibility: hidden;
     width: 225px;
     font-size: 12px;
     padding: 5px 20px 10px;
     list-style-type: none;
     background-color: white;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    -ms-transition: all 0.35s linear;
+    -o-transition: all 0.35s linear;
+    transition: all 0.35s linear;
     @media ${device.tablet} {
         background-color: rgba(255, 255, 255, 0);
     }
     @media ${device.laptop} { 
         opacity: 1;
+        left: 3%;
+        overflow-x: hidden;
+        overflow-y: auto;
         background-color: white;
-        -webkit-transform: translateY(18px);
-        -moz-transform: translateY(18px);
-        -ms-transform: translateY(18px);
-        -o-transform: translateY(18px);
-        transform: translateY(18px);
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+        transform: translateY(30px);
+        -webkit-transition: all 0.35s linear;
+        -moz-transition: all 0.35s linear;
+        -ms-transition: all 0.35s linear;
+        -o-transition: all 0.35s linear;
+        transition: all 0.35s linear;
     }
 `;
 

@@ -4,6 +4,7 @@ import React from "react";
 
 // #region Local Imports
 import { Container, GridContainer, TitleLink, Link } from "./styled";
+import { AdvertisementBanner } from "..";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -42,6 +43,7 @@ export const SubMenuCatalog: React.FunctionComponent<
                 <Link href="#">Bower Earbud</Link>
                 <Link href="#">Griper Earbud</Link>
             </GridContainer>
+            <AdvertisementBanner/>
         </Container>
     );
 };

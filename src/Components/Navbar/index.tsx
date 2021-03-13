@@ -3,6 +3,7 @@ import * as React from "react";
 import { INavbar } from "./Navbar";
 import {
     Container,
+    HamburgerIcon,
     Wrap,
     Icon,
     InnerWrap,
@@ -23,6 +24,7 @@ const Navbar: React.FunctionComponent<INavbar.IProps> = (): JSX.Element => {
         <Container>
             <Wrap>
                 <InnerWrap>
+                    <HamburgerIcon src="images/hamburger.svg"/>
                     <Logo>
                         <LogoImg src="images/logo.png"></LogoImg>
                     </Logo>
@@ -42,7 +44,7 @@ const Navbar: React.FunctionComponent<INavbar.IProps> = (): JSX.Element => {
                     <Right>
                         <Dropdown/>
                         <ShoppingCartIcon/>
-                        <TopBarItem><Icon className="fa-2x fa fa-user"></Icon></TopBarItem>
+                        <Icon className="mt-1 ml-2 fa-2x fa fa-user"></Icon>
                     </Right>
                 </InnerWrap>
             </Wrap>

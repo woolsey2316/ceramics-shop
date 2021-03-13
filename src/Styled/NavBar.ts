@@ -4,7 +4,8 @@ import { device } from "../Definitions/StyledComponents/device";
 // #endregion Global Imports
 
 export const Container = styled.div`
-  padding: 0 4%;
+  z-index: 50;
+  padding: 0 0 0 4%;
   float: left;
   width: 100%;
   color: #373737;
@@ -16,25 +17,39 @@ export const Container = styled.div`
   -webkit-text-size-adjust: 100%;
 `;
 
+export const HamburgerIcon = styled.img`
+  margin: auto 0;
+  padding: 20px 30px;
+  @media ${device.laptop} {
+    display: none;
+  }
+`
+
 export const Wrap = styled.div`
   height: auto;
-  padding: 45px 25px;
-  font-size: 14px;
+  padding-top: 25px;
+  padding-right: 35px;
+  font-size: 16px;
   color: #3e4253;
 `;
 
 export const InnerWrap = styled.div`
   height: 66px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex: 1 1 100%;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0;
+  @media ${device.tablet} {
+    padding: 0 1.5rem;
+  }
 `;
 
 export const Left = styled.div`
+display: none;
+@media ${device.laptop} {
   padding-left: 35px;
   float: left;
   width: 100%;
@@ -43,6 +58,7 @@ export const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
 `;
 
 export const Right = styled.div`
@@ -51,6 +67,10 @@ export const Right = styled.div`
   align-items: center;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  @media ${device.laptop} {
+    justify-content: flex-start
+  }
 `;
 
 export const Dropdown = styled.div`
@@ -93,20 +113,20 @@ export const DropdownItems = styled.li`
 `;
 
 export const SiteNav = styled.ul`
-  padding-left: 75px;
+  padding: 18px 35px;
   float: left;
   width: 100%;
   text-align: left;
   list-style: none;
-  media (max-width: 1599px): {
-    padding-left: 35px;
+  media ${device.laptopXL} {
+    padding: 18px 55px;
   }
 `
 
 export const TopBarItem = styled.li`
   position: relative;
   cursor: pointer;
-  padding: 18px 55px;
+  padding: 18px 25px;
   height: 60px;
   float: none;
   display: inline-block;
@@ -117,7 +137,54 @@ export const TopBarItem = styled.li`
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   @media ${device.laptop} { 
-    padding: 18px 25px;
+    padding: 18px 35px;
+  }
+  @media ${device.laptopXL} { 
+    padding: 18px 55px;
+  }
+  & > ul, & > div {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  &:hover > ul, &:hover > div {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
+    filter: alpha(opacity=100);
+    visibility: visible;
+    pointer-events: auto;
+    -webkit-transform: translateY(18px);
+    -moz-transform: translateY(18px);
+    -ms-transform: translateY(18px);
+    -o-transform: translateY(18px);
+    transform: translateY(18px);
+    -webkit-box-shadow: 0 0 2px 1px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 10%);
+  }
+`;
+
+export const ShoppingCartWrap = styled.li`
+  position: relative;
+  cursor: pointer;
+  padding: 18px;
+  height: 60px;
+  float: none;
+  display: inline-block;
+  margin: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  @media ${device.laptop} { 
+    padding: 18px;
+  }
+  @media ${device.laptopXL} { 
+    padding: 18px;
   }
   & > ul, & > div {
     opacity: 0;
@@ -145,18 +212,23 @@ export const TopBarItem = styled.li`
 `;
 
 export const Link = styled.a`
-  border-color: #fc846b;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 13px 20px;
   color: inherit;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1.65em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  padding: 0;
+  @media ${device.tablet} {
+    border-color: #fc846b;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.65em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    padding: 0;
+  }
   &:hover {
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -179,6 +251,7 @@ export const Logo = styled.a`
   padding: 0px;
   display: inline-block;
   margin: 0 auto;
+  
 `
 
 export const LogoImg = styled.img`
@@ -189,14 +262,24 @@ export const LogoImg = styled.img`
   -ms-transform: translateY(0%);
   -o-transform: translateY(0%);
   transform: translateY(0%);
+  width: 114px;
+  height: 43px;
+  @media ${device.laptop} {
+    width: 170px;
+    height: 64px;
+  }
 `
 export const Icon = styled.i`
-  color: black;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  display: none;
+  @media ${device.laptop} {
+    display: block;
+    color: black;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
   &:hover {
     color: #fc846b;
     -webkit-transition: all 0.4s ease-in-out;
