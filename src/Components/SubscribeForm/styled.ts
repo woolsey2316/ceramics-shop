@@ -2,8 +2,7 @@
 import styled from "styled-components";
 // #endregion Global Imports
 
-import { device } from "@Definitions/StyledComponents"
-import { DarkButton } from "@Definitions/StyledComponents";
+import { device, DarkButton } from "@Definitions/StyledComponents";
 
 export const Outer = styled.div`
     position: relative;
@@ -34,8 +33,8 @@ export const SignUpButton = styled(DarkButton)`
     margin: auto;
     font-weight: 400;
     font-size: 18px;
-    padding: 14px 40px; 
+    padding: 14px 40px;
     @media ${device.tablet} {
-        padding: 14px 80px; 
+        padding: 14px 80px;
     }
 `;

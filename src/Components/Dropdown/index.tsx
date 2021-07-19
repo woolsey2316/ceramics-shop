@@ -1,7 +1,7 @@
 // #region Global Imports
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AU, US, CA, EU, GB } from "country-flag-icons/react/3x2";
+import ReactCountryFlag from "react-country-flag";
 
 // #endregion Global Imports
 
@@ -23,16 +23,39 @@ import { IDropdown } from "./Dropdown";
 type CountryCode = string;
 
 const options: Record<CountryCode, JSX.Element> = {
-    AUD: <AU style={{ width: "30px", marginRight: "15px" }} />,
-    USD: <US style={{ width: "30px", marginRight: "15px" }} />,
-    CAD: <CA style={{ width: "30px", marginRight: "15px" }} />,
-    EUR: <US style={{ width: "30px", marginRight: "15px" }} />,
-    GBR: <GB style={{ width: "30px", marginRight: "15px" }} />,
+    AUD: (
+        <ReactCountryFlag
+            countryCode="AU"
+            style={{ width: "30px", marginRight: "15px" }}
+        />
+    ),
+    USD: (
+        <ReactCountryFlag
+            countryCode="US"
+            style={{ width: "30px", marginRight: "15px" }}
+        />
+    ),
+    CAD: (
+        <ReactCountryFlag
+            countryCode="CA"
+            style={{ width: "30px", marginRight: "15px" }}
+        />
+    ),
+    EUR: (
+        <ReactCountryFlag
+            countryCode="EU"
+            style={{ width: "30px", marginRight: "15px" }}
+        />
+    ),
+    GBR: (
+        <ReactCountryFlag
+            countryCode="GB"
+            style={{ width: "30px", marginRight: "15px" }}
+        />
+    ),
 };
 
-export const Dropdown: React.FunctionComponent<IDropdown.IProps> = (
-    props: IDropdown.IProps
-) => {
+export const Dropdown: React.FunctionComponent<IDropdown.IProps> = () => {
     const [isOpen, setIsOpen] = React.useState<boolean>(false);
     const [selectedOption, setSelectedOption] = React.useState<string>("AUD");
 
@@ -41,7 +64,6 @@ export const Dropdown: React.FunctionComponent<IDropdown.IProps> = (
     const onOptionClicked = (value: React.SetStateAction<string>) => () => {
         setSelectedOption(value);
         setIsOpen(false);
-        console.log(selectedOption);
     };
 
     return (

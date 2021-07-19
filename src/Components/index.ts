@@ -14,7 +14,6 @@ export { ShoppingCartIcon } from "@Components/ShoppingCartIcon";
 export { SubMenuCatalog } from "@Components/SubMenuCatalog";
 export { SubMenuPages } from "@Components/SubMenuPages";
 export { AdvertisementBanner } from "@Components/AdvertisementBanner";
-export { HeroSlider } from "@Components/HeroSlider";
 export { HeroSlickSlider } from "@Components/HeroSlickSlider";
 export { SimplyAwesomeSection } from "@Components/SimplyAwesomeSection";
 export { LongLastingComfortSection } from "@Components/LongLastingComfortSection";

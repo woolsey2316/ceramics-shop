@@ -76,7 +76,6 @@ export const ImageContainer = styled.div`
         position: absolute;
         pointer-events: none;
     }
-    
 `;
 export const Image = styled.img`
     max-width: 100%;

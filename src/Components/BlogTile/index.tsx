@@ -5,7 +5,14 @@ import React from "react";
 // #region Local Imports
 import { DarkButton } from "@Definitions/StyledComponents";
 import { ArticleHeader } from "../ArticleHeader";
-import { Container, Heading, Text, Image, ImageContainer, Inner } from "./styled";
+import {
+    Container,
+    Heading,
+    Text,
+    Image,
+    ImageContainer,
+    Inner,
+} from "./styled";
 // #endregion Local Imports
 
 // #region Interface Imports

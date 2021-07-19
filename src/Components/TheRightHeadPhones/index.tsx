@@ -4,10 +4,7 @@ import React from "react";
 
 // #region Local Imports
 import { Container, BackgroundImage, BannerContent } from "./styled";
-import {
-    PinkHeading,
-    WhiteTextCentered,
-} from "@Definitions/StyledComponents";
+import { PinkHeading, WhiteTextCentered } from "@Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports

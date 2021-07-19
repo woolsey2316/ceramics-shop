@@ -1,6 +1,5 @@
-
 export declare module IMinimalistNavBar {
-    export interface IProps { }
+    export interface IProps {}
 
-    export interface IState { }
+    export interface IState {}
 }

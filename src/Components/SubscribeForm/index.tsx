@@ -16,6 +16,5 @@ export const SubscribeForm: React.FunctionComponent<ISubscribeForm.IProps> = () 
             <Input placeholder="Your email address" />
             <SignUpButton>Sign Up</SignUpButton>
         </Outer>
-    )
+    );
 };
-
