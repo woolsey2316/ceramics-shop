@@ -26,3 +26,5 @@ export { SubscribeSection } from "@Components/SubscribeSection";
 export { BlogTile } from "@Components/BlogTile";
 export { ArticleHeader } from "@Components/ArticleHeader";
 export { SubscribeForm } from "@Components/SubscribeForm";
+export { SocialMediaQuilt } from "@Components/SocialMediaQuilt";
+export { MinimalistNavBar } from "@Components/MinimalistNavBar";

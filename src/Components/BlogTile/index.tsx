@@ -3,9 +3,9 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
+import { DarkButton } from "@Definitions/StyledComponents";
 import { ArticleHeader } from "../ArticleHeader";
 import { Container, Heading, Text, Image, ImageContainer, Inner } from "./styled";
-import { DarkButton } from "../../Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports

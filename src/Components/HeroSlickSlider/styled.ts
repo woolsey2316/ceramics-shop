@@ -1,6 +1,6 @@
 // #region Global Imports
 import styled, { keyframes } from "styled-components";
-import { PinkButton, device } from "../../Definitions/StyledComponents";
+import { PinkButton, device } from "@Definitions/StyledComponents";
 // #endregion Global Imports
 
 const fadeInLeft = keyframes`

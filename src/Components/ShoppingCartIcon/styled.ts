@@ -2,7 +2,7 @@
 import styled from "styled-components";
 // #endregion Global Imports
 
-import { device } from "../../Definitions/StyledComponents";
+import { device } from "@Definitions/StyledComponents";
 
 export const Icon = styled.i`
     color: black;

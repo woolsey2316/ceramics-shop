@@ -11,8 +11,12 @@ export const Container = styled.div`
     align-items: flex-start;
     min-height: 100vh;
     padding: 0 30px;
+    margin-bottom: 30px;
     @media ${device.tablet} {
         max-width: 543px;
+    }
+    @media ${device.laptop} {
+        margin-bottom: 0;
     }
 `;
 
@@ -53,6 +57,7 @@ export const ImageContainer = styled.div`
     border-radius: 30px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     &:hover:before {
         opacity: 0.8;
     }

@@ -19,10 +19,10 @@ import {
     HeadingBorder,
     SmallHeading,
     Text,
-} from "../../Definitions/StyledComponents";
+} from "@Definitions/StyledComponents";
 import Slider, { Settings } from "react-slick";
 import styled from "styled-components";
-import { device } from "../../Definitions/StyledComponents";
+import { device } from "@Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports

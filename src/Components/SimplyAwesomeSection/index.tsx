@@ -9,7 +9,7 @@ import {
     HeadingWithPinkLine,
     Text,
     DarkButton,
-} from "../../Definitions/StyledComponents";
+} from "@Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports

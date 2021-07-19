@@ -1,6 +1,5 @@
 import * as React from "react";
 
-import { INavbar } from "./Navbar";
 import {
     Container,
     HamburgerIcon,
@@ -14,10 +13,11 @@ import {
     Logo,
     LogoImg,
 } from "@Styled/NavBar";
+import { ShoppingCartIcon } from "@Components/ShoppingCartIcon";
+import { INavbar } from "./Navbar";
 import { SubMenuCatalog } from "../SubMenuCatalog";
 import { SubMenuPages } from "../SubMenuPages";
 import { Dropdown } from "../Dropdown";
-import { ShoppingCartIcon } from "@Components/ShoppingCartIcon";
 
 const Navbar: React.FunctionComponent<INavbar.IProps> = (): JSX.Element => {
     return (
@@ -26,7 +26,7 @@ const Navbar: React.FunctionComponent<INavbar.IProps> = (): JSX.Element => {
                 <InnerWrap>
                     <HamburgerIcon src="images/hamburger.svg" />
                     <Logo>
-                        <LogoImg src="images/logo.png"></LogoImg>
+                        <LogoImg src="images/logo.png" />
                     </Logo>
 
                     <Left>

@@ -2,8 +2,8 @@
 import styled from "styled-components";
 // #endregion Global Imports
 
-import { device } from "../../Definitions/StyledComponents/device";
-import { HoverLink } from "../../Definitions/StyledComponents/components";
+import { device } from "@Definitions/StyledComponents/device";
+import { HoverLink } from "@Definitions/StyledComponents/components";
 
 export const Container = styled.ul`
     z-index: 50;

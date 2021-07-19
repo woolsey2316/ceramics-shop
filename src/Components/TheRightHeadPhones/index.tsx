@@ -7,7 +7,7 @@ import { Container, BackgroundImage, BannerContent } from "./styled";
 import {
     PinkHeading,
     WhiteTextCentered,
-} from "../../Definitions/StyledComponents";
+} from "@Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports

@@ -1,6 +1,6 @@
 // #region Global Imports
 import styled from "styled-components";
-import { PinkButton } from "../../Definitions/StyledComponents";
+import { PinkButton } from "@Definitions/StyledComponents";
 // #endregion Global Imports
 
 export const Container = styled.div`
@@ -10,6 +10,7 @@ export const Container = styled.div`
     flex: 1 1 100%;
     justify-content: flex-start;
     align-items: center;
+    padding: 80px 0 40px 0;
 `;
 
 export const Heading = styled.h3`
@@ -26,8 +27,8 @@ export const Heading = styled.h3`
 
 export const Logo = styled.img`
     max-width: 100%;
+    margin: 0 0 30px 0;
     height: 50px;
-    margin: 0;
     color: #373737;
 `;
 

@@ -1,6 +1,6 @@
 // #region Global Imports
 import styled from "styled-components";
-import { device } from "../../Definitions/StyledComponents";
+import { device } from "@Definitions/StyledComponents";
 // #endregion Global Imports
 
 export const Container = styled.div`

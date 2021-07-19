@@ -1,4 +1,7 @@
 // #region Global Imports
+import { SubscribeForm } from "@Components/SubscribeForm";
+import { SocialMediaQuilt } from "@Components/SocialMediaQuilt";
+import { MinimalistNavBar } from "@Components/MinimalistNavBar";
 import React from "react";
 // #endregion Global Imports
 
@@ -10,13 +13,14 @@ import { Container, Heading, Logo } from "./styled";
 import { ISubscribeSection } from "./SubscribeSection";
 // #endregion Interface Imports
 
-export const SubscribeSection: React.FunctionComponent<ISubscribeSection.IProps> = (
-    props: ISubscribeSection.IProps
-) => {
+export const SubscribeSection: React.FunctionComponent<ISubscribeSection.IProps> = () => {
     return (
         <Container>
             <Logo src="../images/logo.png" />
             <Heading>Subscribe to our Newsletter</Heading>
+            <SubscribeForm />
+            <SocialMediaQuilt />
+            <MinimalistNavBar />
         </Container>
     );
 };

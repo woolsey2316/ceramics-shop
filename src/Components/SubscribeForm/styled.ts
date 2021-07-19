@@ -2,12 +2,40 @@
 import styled from "styled-components";
 // #endregion Global Imports
 
-export const Container = styled.div`
-    background-color: ${({ theme }) => theme.colors.primary};
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 100%;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
+import { device } from "@Definitions/StyledComponents"
+import { DarkButton } from "@Definitions/StyledComponents";
+
+export const Outer = styled.div`
+    position: relative;
+    margin: 15px auto 40px;
+    width: 90%;
+    @media ${device.tablet} {
+        width: 70%;
+    }
+    @media ${device.laptop} {
+        width: 60%;
+    }
+`;
+
+export const Input = styled.input`
+    width: 100%;
+    padding: 15px 180px 15px 25px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    height: 70px;
+    border-radius: 50px;
+`;
+
+export const SignUpButton = styled(DarkButton)`
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 14px 40px; 
+    @media ${device.tablet} {
+        padding: 14px 80px; 
+    }
 `;
