@@ -4,23 +4,21 @@ import React from "react";
 
 // #region Local Imports
 import { Container, Wrap } from "./styled";
-import { FullWidthMenu } from "../FullWidthMenu"
+import { FullWidthMenu } from "../FullWidthMenu";
 // #endregion Local Imports
 
 // #region Interface Imports
 import { IBanner } from "./Banner";
 // #endregion Interface Imports
 
-export const Banner: React.FunctionComponent<
-    IBanner.IProps
-> = (props: IBanner.IProps) => {
-
+export const Banner: React.FunctionComponent<IBanner.IProps> = (
+    props: IBanner.IProps
+) => {
     return (
         <Container>
             <Wrap>
-                <FullWidthMenu/>
+                <FullWidthMenu />
             </Wrap>
         </Container>
     );
 };
-

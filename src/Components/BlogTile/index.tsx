@@ -1,0 +1,32 @@
+// #region Global Imports
+import React from "react";
+// #endregion Global Imports
+
+// #region Local Imports
+import { ArticleHeader } from "../ArticleHeader";
+import { Container, Heading, Text, Image, ImageContainer, Inner } from "./styled";
+import { DarkButton } from "../../Definitions/StyledComponents";
+// #endregion Local Imports
+
+// #region Interface Imports
+import { IBlogTile } from "./BlogTile";
+// #endregion Interface Imports
+
+export const BlogTile: React.FunctionComponent<IBlogTile.IProps> = (
+    props: IBlogTile.IProps
+) => {
+    const { title, preview, image, ...rest } = props;
+    return (
+        <Container>
+            <ImageContainer>
+                <Image src={`../images/${image}`} />
+            </ImageContainer>
+            <Inner>
+                <Heading>{title}</Heading>
+                <ArticleHeader {...rest} />
+                <Text>{preview}</Text>
+                <DarkButton>Read More</DarkButton>
+            </Inner>
+        </Container>
+    );
+};

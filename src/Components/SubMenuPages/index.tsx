@@ -10,17 +10,23 @@ import { Container, ListItem, Link } from "./styled";
 import { ISubMenuPages } from "./SubMenuPages";
 // #endregion Interface Imports
 
-export const SubMenuPages: React.FunctionComponent<
-    ISubMenuPages.IProps
-> = (props: ISubMenuPages.IProps) => {
-
+export const SubMenuPages: React.FunctionComponent<ISubMenuPages.IProps> = (
+    props: ISubMenuPages.IProps
+) => {
     return (
         <Container>
-            <ListItem><Link>About</Link></ListItem>
-            <ListItem><Link>Services</Link></ListItem>
-            <ListItem><Link>FAQ</Link></ListItem>
-            <ListItem><Link>Contact</Link></ListItem>
+            <ListItem>
+                <Link>About</Link>
+            </ListItem>
+            <ListItem>
+                <Link>Services</Link>
+            </ListItem>
+            <ListItem>
+                <Link>FAQ</Link>
+            </ListItem>
+            <ListItem>
+                <Link>Contact</Link>
+            </ListItem>
         </Container>
     );
 };
-

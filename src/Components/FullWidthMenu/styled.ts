@@ -18,7 +18,7 @@ export const Wrap = styled.div`
 export const NavWrap = styled.nav`
     margin-left: auto;
     z-index: 11;
-`
+`;
 
 export const MenuList = styled.ul`
     justify-content: space-between;
@@ -26,16 +26,16 @@ export const MenuList = styled.ul`
     align-items: center;
     flex-wrap: wrap;
     display: flex;
-`
+`;
 
 export const MenuItem = styled.li`
     font-size: 1.3rem;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: none;
-`
+`;
 
 export const MenuLink = styled.a`
     justify-content: center;
@@ -43,6 +43,6 @@ export const MenuLink = styled.a`
     padding-bottom: 1.6rem;
     color: #333333;
     font-weight: 500;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
     padding: 1.5rem 2rem;
-`
+`;

@@ -10,14 +10,8 @@ import { Container } from "./styled";
 import { ITopBarItemSearch } from "./TopBarItemSearch";
 // #endregion Interface Imports
 
-export const TopBarItemSearch: React.FunctionComponent<
-    ITopBarItemSearch.IProps
-> = (props: ITopBarItemSearch.IProps) => {
-
-    return (
-        <Container>
-            TopBarItemSearch Page
-        </Container>
-    );
+export const TopBarItemSearch: React.FunctionComponent<ITopBarItemSearch.IProps> = (
+    props: ITopBarItemSearch.IProps
+) => {
+    return <Container>TopBarItemSearch Page</Container>;
 };
-

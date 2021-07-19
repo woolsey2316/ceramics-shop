@@ -4,11 +4,11 @@ import { LayoutProps } from "./Layout";
 
 import Head from "next/head";
 
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Body = styled.body`
-    font-family: 'Poppins';
-`
+    font-family: "Poppins";
+`;
 
 const Layout: React.FunctionComponent<LayoutProps> = ({
     children,
@@ -73,7 +73,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
             </Head>
             <Body>{children}</Body>
         </div>
-    )
+    );
 };
 
 export { Layout };

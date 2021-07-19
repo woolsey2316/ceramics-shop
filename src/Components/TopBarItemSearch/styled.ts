@@ -15,8 +15,8 @@ export const FormAction = styled.form`
     padding: 0 2rem 0 2.5rem;
     border-radius: 30px;
     font-size: 1.4rem;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     display: -ms-flexbox;
     display: flex;
     position: relative;
-`
+`;

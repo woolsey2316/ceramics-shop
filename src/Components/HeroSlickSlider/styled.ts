@@ -1,6 +1,6 @@
 // #region Global Imports
 import styled, { keyframes } from "styled-components";
-import { Button, device } from '../../Definitions/StyledComponents'
+import { PinkButton, device } from "../../Definitions/StyledComponents";
 // #endregion Global Imports
 
 const fadeInLeft = keyframes`
@@ -12,12 +12,12 @@ const fadeInLeft = keyframes`
         opacity: 1;
         transform: none;
     }
-`
+`;
 
 export const SliderWrapper = styled.div`
     position: absolute;
     width: 100%;
-`
+`;
 
 export const CarouselItem = styled.div`
     position: relative;
@@ -26,8 +26,7 @@ export const CarouselItem = styled.div`
     display: flex !important;
     flex-direction: column;
     justify-content: flex-start;
-
-`
+`;
 export const TextWrap = styled.div`
     position: absolute;
     top: 35%;
@@ -36,15 +35,15 @@ export const TextWrap = styled.div`
     @media ${device.laptopXL} {
         width: 30%;
     }
-`
+`;
 
 export const BackgroundImage = styled.img`
     max-width: 100%;
     cursor: grab;
     margin: 0 auto;
-`
+`;
 
-export const H2 = styled.h2`
+export const HeadingWithPinkLine = styled.h2`
     font-size: 18px;
     color: #0c0c0c;
     font-weight: 400;
@@ -56,7 +55,7 @@ export const H2 = styled.h2`
     &::after {
         margin-left: 10px;
         background: #fc846b;
-        content: '';
+        content: "";
         display: inline-block;
         width: 50px;
         height: 1px;
@@ -66,17 +65,17 @@ export const H2 = styled.h2`
         font-size: 20px;
     }
     @media ${device.laptop} {
-        font-size: 22px
+        font-size: 22px;
     }
     @media ${device.laptopL} {
         font-size: 27px;
     }
-`
-export const H3 = styled.h3`
+`;
+export const LargePinkHeading = styled.h3`
     font-size: 24px;
     color: #fc846b;
     animation-name: ${fadeInLeft};
-    animation-delay: 0.15s; 
+    animation-delay: 0.15s;
     animation-duration: 1200ms;
     animation-fill-mode: both;
     animation-iteration-count: 1;
@@ -95,18 +94,18 @@ export const H3 = styled.h3`
     @media ${device.laptopXL} {
         font-size: 72px;
     }
-`
+`;
 
 export const SliderInnerBlock = styled.div`
-    text-align: left;   
+    text-align: left;
     color: #0c0c0c;
     letter-spacing: 0em;
     font-family: Poppins;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.7;
-    -webkit-font-smoothing: antialiased; 
-`
+    -webkit-font-smoothing: antialiased;
+`;
 
 export const Text = styled.div`
     animation-name: ${fadeInLeft};
@@ -118,9 +117,9 @@ export const Text = styled.div`
     margin: 10px 0 25px;
     font-size: 18px;
     color: #0c0c0c;
-`
+`;
 
-export const DarkButton = styled(Button)`
+export const DarkButton = styled(PinkButton)`
     background: #373737;
     color: #fc846b;
     border: none;
@@ -142,7 +141,7 @@ export const DarkButton = styled(Button)`
     @media ${device.laptopL} {
         font-size: 20px;
     }
-`
+`;
 const CarouselButton = styled.button`
     border: none;
     border-radius: 9999px;
@@ -169,14 +168,12 @@ const CarouselButton = styled.button`
         border-color: #373737;
         color: #fc846b;
     }
-`
+`;
 export const LeftArrowButton = styled(CarouselButton)`
     left: calc(4% + 1px);
-    top:50%;
-    
-`
+    top: 50%;
+`;
 export const RightArrowButton = styled(CarouselButton)`
     right: calc(4% + 1px);
-    top:50%;
-    
-`
+    top: 50%;
+`;

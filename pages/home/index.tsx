@@ -6,12 +6,20 @@ import { useSelector, useDispatch } from "react-redux";
 
 // #region Local Imports
 import { withTranslation } from "@Server/i18n";
-import {
-    Container,
-} from "@Styled/Home";
+import { Container } from "@Styled/Home";
 import { IStore } from "@Redux/IStore";
 import { HomeActions } from "@Actions";
-import { Heading, LocaleButton } from "@Components";
+import {
+    AdvancedFeatures,
+    GoodTreblePerformance,
+    Heading,
+    LocaleButton,
+    LongLastingComfortSection,
+    MagicalListeningExperience,
+    SimplyAwesomeSection,
+    SubscribeSection,
+    TheRightHeadPhones,
+} from "@Components";
 import { Hero } from "@Components/Hero";
 import { HeroSlickSlider } from "@Components/HeroSlickSlider";
 import { Navbar } from "@Components/Navbar";
@@ -41,9 +49,16 @@ const Home: NextPage<IHomePage.IProps, IHomePage.InitialProps> = ({
     return (
         <Container>
             <Hero>
-                <Navbar></Navbar>  
-                <HeroSlickSlider/>
+                <Navbar />
+                <HeroSlickSlider />
             </Hero>
+            <SimplyAwesomeSection />
+            <LongLastingComfortSection />
+            <AdvancedFeatures />
+            <MagicalListeningExperience />
+            <TheRightHeadPhones />
+            <GoodTreblePerformance />
+            <SubscribeSection />
         </Container>
     );
 };

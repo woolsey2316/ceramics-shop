@@ -3,19 +3,20 @@ import React, { useRef, useState } from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { 
+import {
     SliderWrapper,
     CarouselItem,
     BackgroundImage,
     SliderInnerBlock,
     TextWrap,
-    H3,
-    H2,
+    LargePinkHeading,
+    HeadingWithPinkLine,
     Text,
-    DarkButton } from "./styled";
-import Slider, { Settings } from 'react-slick'
+    DarkButton,
+} from "./styled";
+import Slider, { Settings } from "react-slick";
 import styled from "styled-components";
-import { device } from "../../Definitions/StyledComponents"
+import { device } from "../../Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -23,18 +24,18 @@ import { IHeroSlickSlider } from "./HeroSlickSlider";
 // #endregion Interface Imports
 
 interface SliderArrowProps {
-  type: "next" | "prev";
-  onClick: () => void;
+    type: "next" | "prev";
+    onClick: () => void;
 }
 
 const SliderArrow = (props: SliderArrowProps) => {
-  const { type, ...rest } = props;
+    const { type, ...rest } = props;
 
-  return (
-    <SliderNav type={type} {...rest}>
-      {type === "next" ? ">" : "<"}
-    </SliderNav>
-  );
+    return (
+        <SliderNav type={type} {...rest}>
+            {type === "next" ? ">" : "<"}
+        </SliderNav>
+    );
 };
 
 const SliderNav = styled.div<SliderArrowProps>`
@@ -72,11 +73,9 @@ const SliderNav = styled.div<SliderArrowProps>`
     }
 `;
 
-
-export const HeroSlickSlider: React.FunctionComponent<
-    IHeroSlickSlider.IProps
-> = (props: IHeroSlickSlider.IProps) => {
-
+export const HeroSlickSlider: React.FunctionComponent<IHeroSlickSlider.IProps> = (
+    props: IHeroSlickSlider.IProps
+) => {
     const sliderRef = useRef<Slider>(null);
     const sliderWrapperRef = useRef<HTMLDivElement>(null);
 
@@ -92,7 +91,7 @@ export const HeroSlickSlider: React.FunctionComponent<
         variableWidth: false,
         infinite: false,
         arrows: false,
-        afterChange: (currentSlide: number) => handleChangeSlide(currentSlide)
+        afterChange: (currentSlide: number) => handleChangeSlide(currentSlide),
     };
 
     const handleChangeSlide = (currentSlide: number) => {
@@ -114,18 +113,20 @@ export const HeroSlickSlider: React.FunctionComponent<
             )}
             <Slider {...settings} ref={sliderRef}>
                 <CarouselItem>
-                    <BackgroundImage 
+                    <BackgroundImage
                         srcSet="images/slider_2000x.png 800w,
                                 images\mob-slider-1_767x.jpg 767w"
                         src="images/slider_2000x.png"
                     />
                     <TextWrap>
-                        <H2>Sing Along</H2>
-                        <H3>Inspired Design & Quality Sound With Beats</H3>
+                        <HeadingWithPinkLine>Sing Along</HeadingWithPinkLine>
+                        <LargePinkHeading>
+                            Inspired Design & Quality Sound With Beats
+                        </LargePinkHeading>
                         <SliderInnerBlock>
                             <Text>
-                                Love what you listen, listen to what you love. 
-                                Music speaks when words don’t. Make it clear. 
+                                Love what you listen, listen to what you love.
+                                Music speaks when words don’t. Make it clear.
                                 Let music reach your heart.
                             </Text>
                             <DarkButton>Buy Now</DarkButton>
@@ -133,28 +134,36 @@ export const HeroSlickSlider: React.FunctionComponent<
                     </TextWrap>
                 </CarouselItem>
                 <CarouselItem>
-                    <BackgroundImage src="images/slider-2-bg_2000x.png"/>
+                    <BackgroundImage src="images/slider-2-bg_2000x.png" />
                     <TextWrap>
-                        <H2>Feel the Rhythm</H2>
-                        <H3>Spark Up Your Passion With Good Music.</H3>
+                        <HeadingWithPinkLine>
+                            Feel the Rhythm
+                        </HeadingWithPinkLine>
+                        <LargePinkHeading>
+                            Spark Up Your Passion With Good Music.
+                        </LargePinkHeading>
                         <SliderInnerBlock>
                             <Text>
-                                Experience the decibles like your ears deserve to.
-                                Safe for the ears, good for the heart. A treat to your ears.
+                                Experience the decibles like your ears deserve
+                                to. Safe for the ears, good for the heart. A
+                                treat to your ears.
                             </Text>
                             <DarkButton>Buy Now</DarkButton>
                         </SliderInnerBlock>
                     </TextWrap>
                 </CarouselItem>
                 <CarouselItem>
-                    <BackgroundImage src="images/slider-3-bg_2000x.png"/>
+                    <BackgroundImage src="images/slider-3-bg_2000x.png" />
                     <TextWrap>
-                        <H2>Stay Tuned</H2>
-                        <H3>Overdose On Music. Overdose On Quality</H3>
+                        <HeadingWithPinkLine>Stay Tuned</HeadingWithPinkLine>
+                        <LargePinkHeading>
+                            Overdose On Music. Overdose On Quality
+                        </LargePinkHeading>
                         <SliderInnerBlock>
                             <Text>
-                                Headphones so good, you will not want to take it off. 
-                                Leaving home without headphones would be a mistake. 
+                                Headphones so good, you will not want to take it
+                                off. Leaving home without headphones would be a
+                                mistake.
                             </Text>
                             <DarkButton>Shop Now</DarkButton>
                         </SliderInnerBlock>
@@ -170,4 +179,3 @@ export const HeroSlickSlider: React.FunctionComponent<
         </SliderWrapper>
     );
 };
-

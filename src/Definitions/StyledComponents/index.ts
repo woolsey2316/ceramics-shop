@@ -1,3 +1,13 @@
 export { device } from "./device";
-export { HoverLink,
-  Button } from './components'
+export {
+    HoverLink,
+    PinkButton,
+    HeadingWithPinkLine,
+    HeadingBorder,
+    SmallHeading,
+    PinkHeading,
+    Text,
+    WhiteText,
+    WhiteTextCentered,
+    DarkButton,
+} from "./components";

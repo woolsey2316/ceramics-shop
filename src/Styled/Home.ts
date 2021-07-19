@@ -6,7 +6,7 @@ export const Container = styled.div`
     color: #313132;
     font-size: 15px;
     font-weight: 400;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;

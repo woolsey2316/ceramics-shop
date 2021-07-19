@@ -1,8 +1,7 @@
-
 export declare module IHero {
-    export interface IProps { 
+    export interface IProps {
         children?: React.ReactNode;
     }
 
-    export interface IState { }
+    export interface IState {}
 }

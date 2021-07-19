@@ -1,8 +1,5 @@
-
 export declare module IHeroSlickSlider {
-    export interface IProps { 
-        
-    }
+    export interface IProps {}
 
-    export interface IState { }
+    export interface IState {}
 }

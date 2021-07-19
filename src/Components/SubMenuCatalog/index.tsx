@@ -11,10 +11,9 @@ import { AdvertisementBanner } from "..";
 import { ISubMenu } from "./SubMenuCatalog";
 // #endregion Interface Imports
 
-export const SubMenuCatalog: React.FunctionComponent<
-    ISubMenu.IProps
-> = (props: ISubMenu.IProps) => {
-
+export const SubMenuCatalog: React.FunctionComponent<ISubMenu.IProps> = (
+    props: ISubMenu.IProps
+) => {
     return (
         <Container className="dropdown">
             <GridContainer>
@@ -43,8 +42,7 @@ export const SubMenuCatalog: React.FunctionComponent<
                 <Link href="#">Bower Earbud</Link>
                 <Link href="#">Griper Earbud</Link>
             </GridContainer>
-            <AdvertisementBanner/>
+            <AdvertisementBanner />
         </Container>
     );
 };
-

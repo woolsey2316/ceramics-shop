@@ -2,11 +2,11 @@
 import styled from "styled-components";
 // #endregion Global Imports
 
-import { device } from '../../Definitions/StyledComponents'
-import { HoverLink } from '../../Definitions/StyledComponents/components'
+import { device } from "../../Definitions/StyledComponents";
+import { HoverLink } from "../../Definitions/StyledComponents/components";
 
 export const Container = styled.div`
-    z-index:50; 
+    z-index: 50;
     visibility: hidden;
     width: 225px;
     font-size: 12px;
@@ -21,7 +21,7 @@ export const Container = styled.div`
     @media ${device.tablet} {
         background-color: rgba(255, 255, 255, 0);
     }
-    @media ${device.laptop} { 
+    @media ${device.laptop} {
         opacity: 1;
         left: 3%;
         overflow-x: hidden;
@@ -40,7 +40,7 @@ export const Container = styled.div`
     }
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled.div`
     padding: 20px 0 8px;
     border-bottom: 1px solid rgb(228, 228, 228);
     width: 100%;
@@ -50,13 +50,12 @@ export const ListItem = styled.li`
     &:last-of-type {
         border-bottom: none;
     }
-    @media ${device.laptop} { 
+    @media ${device.laptop} {
         padding: 10px 0px;
     }
-    
-`
+`;
 
 export const Link = styled(HoverLink)`
     padding: 0px;
     line-height: 1.75em;
-`
+`;

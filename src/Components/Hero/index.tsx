@@ -10,14 +10,8 @@ import { Container } from "./styled";
 import { IHero } from "./Hero";
 // #endregion Interface Imports
 
-export const Hero: React.FunctionComponent<
-    IHero.IProps
-> = (props: IHero.IProps) => {
-
-    return (
-        <Container>
-            {props.children}
-        </Container>
-    );
+export const Hero: React.FunctionComponent<IHero.IProps> = (
+    props: IHero.IProps
+) => {
+    return <Container>{props.children}</Container>;
 };
-

@@ -4,19 +4,19 @@ import React from "react";
 
 // #region Local Imports
 import { Icon } from "./styled";
-import { ShoppingCartWrap } from '../../Styled/NavBar';
+import { ShoppingCartWrap } from "../../Styled/NavBar";
 // #endregion Local Imports
 
 // #region Interface Imports
 import { IShoppingCartIcon } from "./ShoppingCartIcon";
 // #endregion Interface Imports
 
-export const ShoppingCartIcon: React.FunctionComponent<
-    IShoppingCartIcon.IProps
-> = (props: IShoppingCartIcon.IProps) => {
-
+export const ShoppingCartIcon: React.FunctionComponent<IShoppingCartIcon.IProps> = (
+    props: IShoppingCartIcon.IProps
+) => {
     return (
-        <ShoppingCartWrap><Icon className="fa-2x fa fa-shopping-bag"></Icon></ShoppingCartWrap>
+        <ShoppingCartWrap>
+            <Icon className="fa-2x fa fa-shopping-bag"></Icon>
+        </ShoppingCartWrap>
     );
 };
-

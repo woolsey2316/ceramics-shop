@@ -10,14 +10,8 @@ import { Container } from "./styled";
 import { ISearchForm } from "./SearchForm";
 // #endregion Interface Imports
 
-export const SearchForm: React.FunctionComponent<
-    ISearchForm.IProps
-> = (props: ISearchForm.IProps) => {
-
-    return (
-        <Container>
-            SearchForm Page
-        </Container>
-    );
+export const SearchForm: React.FunctionComponent<ISearchForm.IProps> = (
+    props: ISearchForm.IProps
+) => {
+    return <Container>SearchForm Page</Container>;
 };
-

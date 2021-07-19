@@ -12,11 +12,11 @@ import {
     TopBarItem,
     Link,
     Logo,
-    LogoImg
+    LogoImg,
 } from "@Styled/NavBar";
-import { SubMenuCatalog } from '../SubMenuCatalog'
-import { SubMenuPages } from '../SubMenuPages'
-import { Dropdown } from '../Dropdown'
+import { SubMenuCatalog } from "../SubMenuCatalog";
+import { SubMenuPages } from "../SubMenuPages";
+import { Dropdown } from "../Dropdown";
 import { ShoppingCartIcon } from "@Components/ShoppingCartIcon";
 
 const Navbar: React.FunctionComponent<INavbar.IProps> = (): JSX.Element => {
@@ -24,32 +24,36 @@ const Navbar: React.FunctionComponent<INavbar.IProps> = (): JSX.Element => {
         <Container>
             <Wrap>
                 <InnerWrap>
-                    <HamburgerIcon src="images/hamburger.svg"/>
+                    <HamburgerIcon src="images/hamburger.svg" />
                     <Logo>
                         <LogoImg src="images/logo.png"></LogoImg>
                     </Logo>
 
                     <Left>
-                        <TopBarItem><Link>Home</Link></TopBarItem>
+                        <TopBarItem>
+                            <Link>Home</Link>
+                        </TopBarItem>
                         <TopBarItem>
                             <Link>Catalog</Link>
-                            <SubMenuCatalog/>
+                            <SubMenuCatalog />
                         </TopBarItem>
-                        <TopBarItem><Link>Blog</Link></TopBarItem>
+                        <TopBarItem>
+                            <Link>Blog</Link>
+                        </TopBarItem>
                         <TopBarItem>
                             <Link>Pages</Link>
-                            <SubMenuPages/>
+                            <SubMenuPages />
                         </TopBarItem>
                     </Left>
                     <Right>
-                        <Dropdown/>
-                        <ShoppingCartIcon/>
+                        <Dropdown />
+                        <ShoppingCartIcon />
                         <Icon className="mt-1 ml-2 fa-2x fa fa-user"></Icon>
                     </Right>
                 </InnerWrap>
             </Wrap>
-        </Container>    
-    )
+        </Container>
+    );
 };
 
 export { Navbar };

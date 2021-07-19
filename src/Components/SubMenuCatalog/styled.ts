@@ -2,18 +2,18 @@
 import styled from "styled-components";
 // #endregion Global Imports
 
-import { device } from '../../Definitions/StyledComponents/device'
-import { HoverLink } from '../../Definitions/StyledComponents/components'
+import { device } from "../../Definitions/StyledComponents/device";
+import { HoverLink } from "../../Definitions/StyledComponents/components";
 
 export const Container = styled.ul`
-    z-index:50;
+    z-index: 50;
     opacity: inherit;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-    @media ${device.laptop} { 
+    @media ${device.laptop} {
         position: fixed;
         left: 3%;
         width: 94%;
@@ -42,27 +42,25 @@ export const Container = styled.ul`
         -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.1);
         box-shadow: 0 3px 3px -3px rgb(0 0 0 / 10%);
     }
-    
-`
+`;
 
 export const GridContainer = styled.div`
-    @media ${device.laptop} { 
+    @media ${device.laptop} {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: repeat(4,25%);
-        grid-template-rows: repeat(6,16.66%);
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(6, 16.66%);
         color: #373737;
         font-size: 12px;
         font-family: Poppins;
     }
-    
-`
+`;
 
 export const TitleLink = styled(HoverLink)`
     font-weight: 600;
     padding: 6px 0 4px;
-`
+`;
 
 export const Link = styled(HoverLink)`
     padding: 6px 0 4px;
-`
+`;

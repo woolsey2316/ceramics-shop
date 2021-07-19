@@ -10,15 +10,13 @@ import { Container, Advertisement } from "./styled";
 import { IAdvertisementBanner } from "./AdvertisementBanner";
 // #endregion Interface Imports
 
-export const AdvertisementBanner: React.FunctionComponent<
-    IAdvertisementBanner.IProps
-> = (props: IAdvertisementBanner.IProps) => {
-
+export const AdvertisementBanner: React.FunctionComponent<IAdvertisementBanner.IProps> = (
+    props: IAdvertisementBanner.IProps
+) => {
     return (
         <Container>
-            <Advertisement src="images/Boom_Mega_Menu_01_850x.png"/>
-            <Advertisement src="images/Boom_Mega_Menu_02_850x.png"/>
+            <Advertisement src="images/Boom_Mega_Menu_01_850x.png" />
+            <Advertisement src="images/Boom_Mega_Menu_02_850x.png" />
         </Container>
     );
 };
-
