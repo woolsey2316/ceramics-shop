@@ -26,31 +26,36 @@ const options: Record<CountryCode, JSX.Element> = {
     AUD: (
         <ReactCountryFlag
             countryCode="AU"
-            style={{ width: "30px", marginRight: "15px" }}
+            svg
+            style={{ width: "30px", marginRight: "15px", fontSize: '2em' }}
         />
     ),
     USD: (
         <ReactCountryFlag
             countryCode="US"
-            style={{ width: "30px", marginRight: "15px" }}
+            svg
+            style={{ width: "30px", marginRight: "15px", fontSize: '2em' }}
         />
     ),
     CAD: (
         <ReactCountryFlag
             countryCode="CA"
-            style={{ width: "30px", marginRight: "15px" }}
+            svg
+            style={{ width: "30px", marginRight: "15px", fontSize: '2em' }}
         />
     ),
     EUR: (
         <ReactCountryFlag
             countryCode="EU"
-            style={{ width: "30px", marginRight: "15px" }}
+            svg
+            style={{ width: "30px", marginRight: "15px", fontSize: '2em' }}
         />
     ),
     GBR: (
         <ReactCountryFlag
             countryCode="GB"
-            style={{ width: "30px", marginRight: "15px" }}
+            svg
+            style={{ width: "30px", marginRight: "15px", fontSize: '2em' }}
         />
     ),
 };

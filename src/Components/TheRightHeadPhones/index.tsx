@@ -3,8 +3,8 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { Container, BackgroundImage, BannerContent } from "./styled";
-import { PinkHeading, WhiteTextCentered } from "@Definitions/StyledComponents";
+import { Container, Picture, BackgroundImage, BannerContent, PinkHeading, PlayLink, PlayButton } from "./styled";
+import { WhiteTextCentered } from "@Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -23,12 +23,16 @@ export const TheRightHeadPhones: React.FunctionComponent<ITheRightHeadPhones.IPr
                     sed turpis tincidunt id aliquet risus. Arcu felis bibendum
                     ut tristique et.
                 </WhiteTextCentered>
-                <img src="../images/play-button.svg" />
+                <PlayButton>
+                    <img src="../images/play-button.svg"/>
+                </PlayButton>
             </BannerContent>
-            <BackgroundImage
-                src="../images/video-bg.jpg"
-                alt="man using earphones"
-            />
+            <Picture>
+                <BackgroundImage
+                    src="../images/video-bg.jpg"
+                    alt="man using earphones"
+                />
+            </Picture>
         </Container>
     );
 };

@@ -6,7 +6,7 @@ import React from "react";
 import { DarkButton } from "@Definitions/StyledComponents";
 import { ArticleHeader } from "../ArticleHeader";
 import {
-    Container,
+    BlogTileContainer,
     Heading,
     Text,
     Image,
@@ -24,7 +24,7 @@ export const BlogTile: React.FunctionComponent<IBlogTile.IProps> = (
 ) => {
     const { title, preview, image, ...rest } = props;
     return (
-        <Container>
+        <BlogTileContainer>
             <ImageContainer>
                 <Image src={`../images/${image}`} />
             </ImageContainer>
@@ -34,6 +34,6 @@ export const BlogTile: React.FunctionComponent<IBlogTile.IProps> = (
                 <Text>{preview}</Text>
                 <DarkButton>Read More</DarkButton>
             </Inner>
-        </Container>
+        </BlogTileContainer>
     );
 };

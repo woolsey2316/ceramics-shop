@@ -3,20 +3,16 @@ import styled from "styled-components";
 import { device } from "@Definitions/StyledComponents";
 // #endregion Global Imports
 
-export const Container = styled.div`
+export const BlogTileContainer = styled.div`
     display: flex;
     flex-direction: column;
     flex: 1 1 100%;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 100vh;
     padding: 0 30px;
-    margin-bottom: 30px;
+    margin-bottom: 52px;
     @media ${device.tablet} {
         max-width: 543px;
-    }
-    @media ${device.laptop} {
-        margin-bottom: 0;
     }
 `;
 
