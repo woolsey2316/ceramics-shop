@@ -15,8 +15,8 @@ export const AdvertisementBanner: React.FunctionComponent<IAdvertisementBanner.I
 ) => {
     return (
         <Container>
-            <Advertisement src="images/Boom_Mega_Menu_01_850x.png" />
-            <Advertisement src="images/Boom_Mega_Menu_02_850x.png" />
+            <Advertisement src="/static/images/Boom_Mega_Menu_01_850x.png" />
+            <Advertisement src="/static/images/Boom_Mega_Menu_02_850x.png" />
         </Container>
     );
 };

@@ -25,8 +25,9 @@ export const BlogTile: React.FunctionComponent<IBlogTile.IProps> = (
     const { title, preview, image, ...rest } = props;
     return (
         <BlogTileContainer>
+            {/* main image */}
             <ImageContainer>
-                <Image src={`../images/${image}`} />
+                <Image src={`/static/images/${image}`} />
             </ImageContainer>
             <Inner>
                 <Heading>{title}</Heading>

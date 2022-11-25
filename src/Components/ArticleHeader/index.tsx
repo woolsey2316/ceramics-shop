@@ -24,10 +24,10 @@ export const ArticleHeader: React.FunctionComponent<IArticleHeader.IProps> = (
 
     return (
         <Outer>
-            <UserIcon src="/images/user-icon.svg" />
+            <UserIcon src="/static/images/user-icon.svg" />
             <Author>{`by ${author}`}</Author>
             <Separator>|</Separator>
-            <CalendarIcon src="/images/calendar-icon.svg" />
+            <CalendarIcon src="/static/images/calendar-icon.svg" />
             <PublishDate>{publishDate}</PublishDate>
         </Outer>
     );

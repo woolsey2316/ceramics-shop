@@ -5,7 +5,7 @@
   "repository": "https://github.com/pankod/next-boilerplate",
   "author": "Pankod <info@pankod.com>",
   "scripts": {
-    "start:dev": "nodemon",
+    "start:dev": "next dev",
     "build": "next build && tsc --project tsconfig.server.json",
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "test": "jest --coverage",

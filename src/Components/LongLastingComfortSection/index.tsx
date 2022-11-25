@@ -37,7 +37,7 @@ export const LongLastingComfortSection: React.FunctionComponent<ILongLastingComf
                     </Text>
                     <DarkButton>Buy Now</DarkButton>
                 </TextContainer>
-                <Image src="../images/img-2_960x.png"></Image>
+                <Image src="/static/images/img-2_960x.png"></Image>
             </Grid1x2>
         </Container>
     );

@@ -15,19 +15,19 @@ export const SocialMediaQuilt: React.FunctionComponent<ISocialMediaQuilt.IProps>
         <Container>
             <Image
                 alt="social media icon"
-                src="/images/icons/twitter-brands.svg"
+                src="/static/images/icons/twitter-brands.svg"
             />
             <Image
                 alt="social media icon"
-                src="/images/icons/facebook-f-brands.svg"
+                src="/static/images/icons/facebook-f-brands.svg"
             />
             <Image
                 alt="social media icon"
-                src="/images/icons/pinterest-brands.svg"
+                src="/static/images/icons/pinterest-brands.svg"
             />
             <Image
                 alt="social media icon"
-                src="/images/icons/instagram-brands.svg"
+                src="/static/images/icons/instagram-brands.svg"
             />
         </Container>
     );

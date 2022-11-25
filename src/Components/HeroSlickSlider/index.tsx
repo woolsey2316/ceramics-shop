@@ -114,9 +114,9 @@ export const HeroSlickSlider: React.FunctionComponent<IHeroSlickSlider.IProps> =
             <Slider {...settings} ref={sliderRef}>
                 <CarouselItem>
                     <BackgroundImage
-                        srcSet="images/slider_2000x.png 800w,
-                                images\mob-slider-1_767x.jpg 767w"
-                        src="images/slider_2000x.png"
+                        srcSet="/static/images/slider_2000x.png 800w,
+                                /static/images/mob-slider-1_767x.jpg 767w"
+                        src="/static/images/slider_2000x.png"
                     />
                     <TextWrap>
                         <HeadingWithPinkLine>Sing Along</HeadingWithPinkLine>
@@ -134,7 +134,7 @@ export const HeroSlickSlider: React.FunctionComponent<IHeroSlickSlider.IProps> =
                     </TextWrap>
                 </CarouselItem>
                 <CarouselItem>
-                    <BackgroundImage src="images/slider-2-bg_2000x.png" />
+                    <BackgroundImage src="/static/images/slider-2-bg_2000x.png" />
                     <TextWrap>
                         <HeadingWithPinkLine>
                             Feel the Rhythm
@@ -153,7 +153,7 @@ export const HeroSlickSlider: React.FunctionComponent<IHeroSlickSlider.IProps> =
                     </TextWrap>
                 </CarouselItem>
                 <CarouselItem>
-                    <BackgroundImage src="images/slider-3-bg_2000x.png" />
+                    <BackgroundImage src="/static/images/slider-3-bg_2000x.png" />
                     <TextWrap>
                         <HeadingWithPinkLine>Stay Tuned</HeadingWithPinkLine>
                         <LargePinkHeading>

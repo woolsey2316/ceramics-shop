@@ -22,7 +22,7 @@ export const SimplyAwesomeSection: React.FunctionComponent<ISimplyAwesomeSection
     return (
         <Container>
             <Grid1x2>
-                <Image src="../images/img-1a_960x.png"></Image>
+                <Image src="/static/images/img-1a_960x.png"></Image>
                 <TextContainer>
                     <HeadingWithPinkLine>Simply Awesome</HeadingWithPinkLine>
                     <PinkHeading>

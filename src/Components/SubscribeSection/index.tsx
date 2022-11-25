@@ -16,7 +16,7 @@ import { ISubscribeSection } from "./SubscribeSection";
 export const SubscribeSection: React.FunctionComponent<ISubscribeSection.IProps> = () => {
     return (
         <Container>
-            <Logo src="../images/logo.png" />
+            <Logo src="/static/images/logo.png" />
             <Heading>Subscribe to our Newsletter</Heading>
             <SubscribeForm />
             <SocialMediaQuilt />

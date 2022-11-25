@@ -26,33 +26,33 @@ export const AdvancedFeatures: React.FunctionComponent<IAdvancedFeatures.IProps>
     return (
         <Container>
             <ImageContainer>
-                <Image src="../images/img-3_900x.jpg" />
+                <Image src="/static/images/img-3_900x.jpg" />
             </ImageContainer>
             <TextContainer>
                 <HeadingWithWhiteLine>Advanced Features</HeadingWithWhiteLine>
                 <BlackHeading>Ultimate comfort and best sound</BlackHeading>
                 <BulletPointItem>
-                    <Icon src="../images/icon-1_grande.png" />
+                    <Icon src="/static/images/icon-1_grande.png" />
                     <WhiteText>Bluetooth connectivity</WhiteText>
                 </BulletPointItem>
                 <BulletPointItem>
-                    <Icon src="../images/icon-2_grande.png" />
+                    <Icon src="/static/images/icon-2_grande.png" />
                     <WhiteText>Wireless headphones</WhiteText>
                 </BulletPointItem>
                 <BulletPointItem>
-                    <Icon src="../images/icon-3_grande.png" />
+                    <Icon src="/static/images/icon-3_grande.png" />
                     <WhiteText>Long lasting battery</WhiteText>
                 </BulletPointItem>
                 <BulletPointItem>
-                    <Icon src="../images/icon-4_grande.png" />
+                    <Icon src="/static/images/icon-4_grande.png" />
                     <WhiteText>Higher water & dust resistance</WhiteText>
                 </BulletPointItem>
                 <BulletPointItem>
-                    <Icon src="../images/icon-5_grande.png" />
+                    <Icon src="/static/images/icon-5_grande.png" />
                     <WhiteText>One Touch Control</WhiteText>
                 </BulletPointItem>
                 <BulletPointItem>
-                    <Icon src="../images/icon-6_grande.png" />
+                    <Icon src="/static/images/icon-6_grande.png" />
                     <WhiteText>Active Noise Cancelling</WhiteText>
                 </BulletPointItem>
             </TextContainer>

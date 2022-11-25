@@ -24,12 +24,12 @@ export const TheRightHeadPhones: React.FunctionComponent<ITheRightHeadPhones.IPr
                     ut tristique et.
                 </WhiteTextCentered>
                 <PlayButton>
-                    <img src="../images/play-button.svg"/>
+                    <img src="/static/images/play-button.svg"/>
                 </PlayButton>
             </BannerContent>
             <Picture>
                 <BackgroundImage
-                    src="../images/video-bg.jpg"
+                    src="/static/images/video-bg.jpg"
                     alt="man using earphones"
                 />
             </Picture>

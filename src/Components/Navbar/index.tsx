@@ -24,9 +24,9 @@ const Navbar: React.FunctionComponent<INavbar.IProps> = (): JSX.Element => {
         <Container>
             <Wrap>
                 <InnerWrap>
-                    <HamburgerIcon src="images/hamburger.svg" />
+                    <HamburgerIcon src="/static/images/hamburger.svg" />
                     <Logo>
-                        <LogoImg src="images/logo.png" />
+                        <LogoImg src="/static/images/logo.png" />
                     </Logo>
 
                     <Left>

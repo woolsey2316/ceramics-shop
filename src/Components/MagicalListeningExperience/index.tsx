@@ -99,7 +99,7 @@ export const MagicalListeningExperience: React.FunctionComponent<IMagicalListeni
                     <CarouselItem>
                         <Grid1x2>
                             <ImageContainer>
-                                <Image src="../images/testi-1_300x.png"></Image>
+                                <Image src="/static/images/testi-1_300x.png"></Image>
                             </ImageContainer>
                             <TextContainer>
                                 <Text>
@@ -119,7 +119,7 @@ export const MagicalListeningExperience: React.FunctionComponent<IMagicalListeni
                     <CarouselItem>
                         <Grid1x2>
                             <ImageContainer>
-                                <Image src="../images/test-1_300x.jpg"></Image>
+                                <Image src="/static/images/test-1_300x.jpg"></Image>
                             </ImageContainer>
                             <TextContainer>
                                 <Text>
@@ -139,7 +139,7 @@ export const MagicalListeningExperience: React.FunctionComponent<IMagicalListeni
                     <CarouselItem>
                         <Grid1x2>
                             <ImageContainer>
-                                <Image src="../images/test-2_300x.jpg"></Image>
+                                <Image src="/static/images/test-2_300x.jpg"></Image>
                             </ImageContainer>
                             <TextContainer>
                                 <Text>
