@@ -48,7 +48,7 @@ const Navbar: React.FunctionComponent<INavbar.IProps> = (): JSX.Element => {
                     <Right>
                         <Dropdown />
                         <ShoppingCartIcon />
-                        <Icon className="mt-1 ml-2 fa-2x fa fa-user"></Icon>
+                        <Icon className="mt-1 ml-2 fa-2x fa fa-user" />
                     </Right>
                 </InnerWrap>
             </Wrap>

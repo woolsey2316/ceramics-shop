@@ -3,13 +3,13 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { Container, Grid1x2, Image, TextContainer } from "./styled";
 import {
     PinkHeading,
     HeadingWithPinkLine,
     Text,
     DarkButton,
 } from "@Definitions/StyledComponents";
+import { Container, Grid1x2, Image, TextContainer } from "./styled";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -22,7 +22,7 @@ export const SimplyAwesomeSection: React.FunctionComponent<ISimplyAwesomeSection
     return (
         <Container>
             <Grid1x2>
-                <Image src="/static/images/img-1a_960x.png"></Image>
+                <Image src="/static/images/img-1a_960x.png" />
                 <TextContainer>
                     <HeadingWithPinkLine>Simply Awesome</HeadingWithPinkLine>
                     <PinkHeading>

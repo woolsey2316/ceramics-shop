@@ -3,8 +3,16 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { Container, Picture, BackgroundImage, BannerContent, PinkHeading, PlayLink, PlayButton } from "./styled";
 import { WhiteTextCentered } from "@Definitions/StyledComponents";
+import {
+    Container,
+    Picture,
+    BackgroundImage,
+    BannerContent,
+    PinkHeading,
+    PlayLink,
+    PlayButton,
+} from "./styled";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -24,7 +32,7 @@ export const TheRightHeadPhones: React.FunctionComponent<ITheRightHeadPhones.IPr
                     ut tristique et.
                 </WhiteTextCentered>
                 <PlayButton>
-                    <img src="/static/images/play-button.svg"/>
+                    <img src="/static/images/play-button.svg" />
                 </PlayButton>
             </BannerContent>
             <Picture>

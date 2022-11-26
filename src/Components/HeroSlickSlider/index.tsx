@@ -3,6 +3,9 @@ import React, { useRef, useState } from "react";
 // #endregion Global Imports
 
 // #region Local Imports
+import Slider, { Settings } from "react-slick";
+import styled from "styled-components";
+import { device } from "@Definitions/StyledComponents";
 import {
     SliderWrapper,
     CarouselItem,
@@ -14,9 +17,6 @@ import {
     Text,
     DarkButton,
 } from "./styled";
-import Slider, { Settings } from "react-slick";
-import styled from "styled-components";
-import { device } from "@Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -73,15 +73,22 @@ const SliderNav = styled.div<SliderArrowProps>`
     }
 `;
 
-export const HeroSlickSlider: React.FunctionComponent<IHeroSlickSlider.IProps> = (
-    props: IHeroSlickSlider.IProps
-) => {
+export const HeroSlickSlider: React.FunctionComponent<IHeroSlickSlider.IProps> = () => {
     const sliderRef = useRef<Slider>(null);
     const sliderWrapperRef = useRef<HTMLDivElement>(null);
 
     const [showRightArrow, setShowRightArrow] = useState<boolean>(true);
     const [showLeftArrow, setShowLeftArrow] = useState<boolean>(false);
 
+    const handleChangeSlide = (currentSlide: number) => {
+        const leftArrowVisible = currentSlide !== 0;
+
+        const rightArrowVisible = currentSlide < 2;
+
+        setShowLeftArrow(leftArrowVisible);
+
+        setShowRightArrow(rightArrowVisible);
+    };
     const settings: Settings = {
         centerMode: false,
         fade: true,
@@ -94,15 +101,6 @@ export const HeroSlickSlider: React.FunctionComponent<IHeroSlickSlider.IProps> =
         afterChange: (currentSlide: number) => handleChangeSlide(currentSlide),
     };
 
-    const handleChangeSlide = (currentSlide: number) => {
-        const leftArrowVisible = currentSlide !== 0;
-
-        const rightArrowVisible = currentSlide < 2;
-
-        setShowLeftArrow(leftArrowVisible);
-
-        setShowRightArrow(rightArrowVisible);
-    };
     return (
         <SliderWrapper ref={sliderWrapperRef}>
             {showLeftArrow && (

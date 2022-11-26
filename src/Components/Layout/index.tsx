@@ -1,10 +1,9 @@
 import * as React from "react";
 
-import { LayoutProps } from "./Layout";
-
 import Head from "next/head";
 
 import styled from "styled-components";
+import { LayoutProps } from "./Layout";
 
 const Body = styled.body`
     font-family: "Poppins";

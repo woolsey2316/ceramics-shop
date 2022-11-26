@@ -1,6 +1,6 @@
 // #region Global Imports
 import styled from "styled-components";
-import { device } from "@Definitions/StyledComponents"
+import { device } from "@Definitions/StyledComponents";
 // #endregion Global Imports
 
 export const Container = styled.div`
@@ -9,7 +9,7 @@ export const Container = styled.div`
     @media ${device.laptop} {
         height: "600px";
     }
-`
+`;
 
 export const Picture = styled.picture`
     height: 100%;
@@ -57,15 +57,13 @@ export const PinkHeading = styled.h3`
     font-family: Playfair Display;
     font-weight: bold;
     letter-spacing: 0em;
-    margin: 0 0 15px;   
+    margin: 0 0 15px;
     @media ${device.laptop} {
         font-size: 40px;
     }
 `;
 
-export const PlayButton = styled.a`
-   
-`
+export const PlayButton = styled.a``;
 
 export const PlayLink = styled.a`
     cursor: pointer;
@@ -85,4 +83,4 @@ export const PlayLink = styled.a`
     margin: auto;
     z-index: 1;
     transition: all 0.3s linear;
-`
+`;

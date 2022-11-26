@@ -4,6 +4,15 @@ import React, { useRef, useState } from "react";
 
 // #region Local Imports
 import {
+    PinkHeading,
+    HeadingBorder,
+    SmallHeading,
+    Text,
+} from "@Definitions/StyledComponents";
+import Slider, { Settings } from "react-slick";
+import styled from "styled-components";
+import { device } from "@Definitions/StyledComponents";
+import {
     Container,
     Grid1x2,
     Image,
@@ -14,15 +23,6 @@ import {
     ImageContainer,
     SliderWrapper,
 } from "./styled";
-import {
-    PinkHeading,
-    HeadingBorder,
-    SmallHeading,
-    Text,
-} from "@Definitions/StyledComponents";
-import Slider, { Settings } from "react-slick";
-import styled from "styled-components";
-import { device } from "@Definitions/StyledComponents";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -37,7 +37,7 @@ interface SliderDotProps {
 const SliderDots = (props: SliderDotProps) => {
     const { currentSlide, i } = props;
 
-    return <Dots i={i} currentSlide={currentSlide}></Dots>;
+    return <Dots i={i} currentSlide={currentSlide} />;
 };
 
 const Dots = styled.button<SliderDotProps>`
@@ -67,7 +67,7 @@ export const MagicalListeningExperience: React.FunctionComponent<IMagicalListeni
 
     const settings: Settings = {
         appendDots: dots => <ul>{dots}</ul>,
-        customPaging: function(i) {
+        customPaging(i) {
             return <SliderDots i={i} currentSlide={currentSlide} />;
         },
         centerMode: false,
@@ -99,7 +99,7 @@ export const MagicalListeningExperience: React.FunctionComponent<IMagicalListeni
                     <CarouselItem>
                         <Grid1x2>
                             <ImageContainer>
-                                <Image src="/static/images/testi-1_300x.png"></Image>
+                                <Image src="/static/images/testi-1_300x.png" />
                             </ImageContainer>
                             <TextContainer>
                                 <Text>
@@ -119,7 +119,7 @@ export const MagicalListeningExperience: React.FunctionComponent<IMagicalListeni
                     <CarouselItem>
                         <Grid1x2>
                             <ImageContainer>
-                                <Image src="/static/images/test-1_300x.jpg"></Image>
+                                <Image src="/static/images/test-1_300x.jpg" />
                             </ImageContainer>
                             <TextContainer>
                                 <Text>
@@ -139,7 +139,7 @@ export const MagicalListeningExperience: React.FunctionComponent<IMagicalListeni
                     <CarouselItem>
                         <Grid1x2>
                             <ImageContainer>
-                                <Image src="/static/images/test-2_300x.jpg"></Image>
+                                <Image src="/static/images/test-2_300x.jpg" />
                             </ImageContainer>
                             <TextContainer>
                                 <Text>

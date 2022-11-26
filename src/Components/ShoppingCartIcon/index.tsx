@@ -16,7 +16,7 @@ export const ShoppingCartIcon: React.FunctionComponent<IShoppingCartIcon.IProps>
 ) => {
     return (
         <ShoppingCartWrap>
-            <Icon className="fa-2x fa fa-shopping-bag"></Icon>
+            <Icon className="fa-2x fa fa-shopping-bag" />
         </ShoppingCartWrap>
     );
 };

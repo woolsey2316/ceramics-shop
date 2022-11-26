@@ -3,13 +3,13 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { Container, Grid1x2, Image, TextContainer } from "./styled";
 import {
     PinkHeading,
     HeadingWithPinkLine,
     Text,
     DarkButton,
 } from "@Definitions/StyledComponents";
+import { Container, Grid1x2, Image, TextContainer } from "./styled";
 // #endregion Local Imports
 
 // #region Interface Imports
@@ -37,7 +37,7 @@ export const LongLastingComfortSection: React.FunctionComponent<ILongLastingComf
                     </Text>
                     <DarkButton>Buy Now</DarkButton>
                 </TextContainer>
-                <Image src="/static/images/img-2_960x.png"></Image>
+                <Image src="/static/images/img-2_960x.png" />
             </Grid1x2>
         </Container>
     );
